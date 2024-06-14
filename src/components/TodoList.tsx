@@ -4,6 +4,7 @@ import TodoService from "../TodoService";
 import { FaCheck, FaEdit } from "react-icons/fa";
 import { GiCancel } from "react-icons/gi";
 import { RiDeleteBinFill } from "react-icons/ri";
+import TodoForm from "./TodoForm";
 
 const TodoList = () => {
   const [todos, setTodos] = useState<ToDoTypes[]>(TodoService.getTodos());
@@ -52,6 +53,7 @@ const TodoList = () => {
     <div className="todoContainer">
         <div>
             {/* Todo input form */}
+            <TodoForm setTodos={setTodos}/>
         </div>
         {
             todos.map((todo) => (
