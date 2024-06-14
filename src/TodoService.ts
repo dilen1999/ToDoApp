@@ -1,4 +1,5 @@
 import ToDoTypes from "./todo";
+import "./CSS/TodoForm.css";
 
 const LOCAL_STORAGE_KEY = "todos";
 

@@ -5,6 +5,7 @@ import { FaCheck, FaEdit } from "react-icons/fa";
 import { GiCancel } from "react-icons/gi";
 import { RiDeleteBinFill } from "react-icons/ri";
 import TodoForm from "./TodoForm";
+import "../CSS/TodoList.css";
 
 const TodoList = () => {
   const [todos, setTodos] = useState<ToDoTypes[]>(TodoService.getTodos());
@@ -55,6 +56,7 @@ const TodoList = () => {
             {/* Todo input form */}
             <TodoForm setTodos={setTodos}/>
         </div>
+        <div className="todos">
         {
             todos.map((todo) => (
                 <div className="items" key={todo.id}>
@@ -78,7 +80,7 @@ const TodoList = () => {
                         <div className="editBtn">
                             {/* Display the todo text or other content here */}
                             <span>{todo.text}</span>
-                            <button onClick={()=>handleEditStart(todo.id, todo.text)}>
+                            <button onClick={()=>handleEditStart(todo.id, todo.text)} className="editText">
                                 <FaEdit/>
                             </button>
                         </div>
@@ -89,6 +91,7 @@ const TodoList = () => {
                 </div>
             ))
         }
+        </div>
     </div>
 );
 
