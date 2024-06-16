@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|d:\\6 th semi\\interview\\todo app\\sam\\todoapp\\todoapibackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|d:\\6 th semi\\interview\\todo app\\sam\\todoapp\\todoapibackend\\model\\todocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|solutionrelative:model\\todocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|d:\\6 th semi\\interview\\todo app\\sam\\todoapp\\todoapibackend\\controller\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|solutionrelative:controller\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|d:\\6 th semi\\interview\\todo app\\sam\\todoapp\\todoapibackend\\service\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|solutionrelative:service\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|d:\\6 th semi\\interview\\todo app\\sam\\todoapp\\todoapibackend\\service\\itodoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|solutionrelative:service\\itodoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|d:\\6 th semi\\interview\\todo app\\sam\\todoapp\\todoapibackend\\repository\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|solutionrelative:repository\\todorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|d:\\6 th semi\\interview\\todo app\\sam\\todoapp\\todoapibackend\\model\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7163B3F4-B9A6-4396-8B72-3D1DC7BBB592}|TodoApiBackend.csproj|solutionrelative:model\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-16T07:08:38.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Controller\\ApiController.cs",
+              "RelativeDocumentMoniker": "Controller\\ApiController.cs",
+              "ToolTip": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Controller\\ApiController.cs",
+              "RelativeToolTip": "Controller\\ApiController.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAgwIYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:11:19.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TodoContext.cs",
+              "DocumentMoniker": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Model\\TodoContext.cs",
+              "RelativeDocumentMoniker": "Model\\TodoContext.cs",
+              "ToolTip": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Model\\TodoContext.cs",
+              "RelativeToolTip": "Model\\TodoContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:09:51.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITodoService.cs",
+              "DocumentMoniker": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Service\\ITodoService.cs",
+              "RelativeDocumentMoniker": "Service\\ITodoService.cs",
+              "ToolTip": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Service\\ITodoService.cs",
+              "RelativeToolTip": "Service\\ITodoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:10:43.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TodoService.cs",
+              "DocumentMoniker": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Service\\TodoService.cs",
+              "RelativeDocumentMoniker": "Service\\TodoService.cs",
+              "ToolTip": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Service\\TodoService.cs",
+              "RelativeToolTip": "Service\\TodoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:10:26.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TodoRepository.cs",
+              "DocumentMoniker": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Repository\\TodoRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\TodoRepository.cs",
+              "ToolTip": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Repository\\TodoRepository.cs",
+              "RelativeToolTip": "Repository\\TodoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:10:08.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Model\\TaskItem.cs",
+              "RelativeDocumentMoniker": "Model\\TaskItem.cs",
+              "ToolTip": "D:\\6 th semi\\Interview\\ToDo app\\sam\\Todoapp\\TodoApiBackend\\Model\\TaskItem.cs",
+              "RelativeToolTip": "Model\\TaskItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T14:09:40.517Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
