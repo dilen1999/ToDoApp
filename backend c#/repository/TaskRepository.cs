@@ -1,21 +1,10 @@
-﻿using backend_c_.data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using backend_c_.model; // Adjust namespace as per your project structure
 
-namespace backend_c_.repository
+namespace backend_c_.repository // Adjust namespace as per your project structure
 {
-public interface ITaskRepository
-    {
-        Task<IEnumerable<Task>> GetTasksAsync();
-        Task<Task> GetTaskByIdAsync(int id);
-        Task AddTaskAsync(Task task);
-        Task UpdateTaskAsync(Task task);
-        Task DeleteTaskAsync(int id);
-    }
-
     public class TaskRepository : ITaskRepository
     {
         private readonly TaskContext _context;
@@ -57,4 +46,4 @@ public interface ITaskRepository
             }
         }
     }
-    }
+}

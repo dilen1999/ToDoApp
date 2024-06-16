@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace backend_c_.model
 {
     [Table("Tasks")]
-    public class Task
+    public class TaskItem
     {
         [Key]
         public int TaskId { get; set; }
+        
         [Required]
         [StringLength(50)]
         public string TaskName { get; set; }
@@ -22,6 +19,5 @@ namespace backend_c_.model
         [Column("Time")]
         [DataType(DataType.DateTime)]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
-        
     }
 }

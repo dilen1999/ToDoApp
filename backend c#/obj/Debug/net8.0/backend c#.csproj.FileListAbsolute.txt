@@ -12,3 +12,10 @@ D:\6 th semi\Interview\ToDo app\backend c#\obj\Debug\net8.0\refint\backend c#.dl
 D:\6 th semi\Interview\ToDo app\backend c#\obj\Debug\net8.0\backend c#.pdb
 D:\6 th semi\Interview\ToDo app\backend c#\obj\Debug\net8.0\backend c#.genruntimeconfig.cache
 D:\6 th semi\Interview\ToDo app\backend c#\obj\Debug\net8.0\ref\backend c#.dll
+D:\6 th semi\Interview\ToDo app\ToDoApp\backend c#\obj\Debug\net8.0\backend c#.csproj.AssemblyReference.cache
+D:\6 th semi\Interview\ToDo app\ToDoApp\backend c#\obj\Debug\net8.0\backend c#.GeneratedMSBuildEditorConfig.editorconfig
+D:\6 th semi\Interview\ToDo app\ToDoApp\backend c#\obj\Debug\net8.0\backend c#.AssemblyInfoInputs.cache
+D:\6 th semi\Interview\ToDo app\ToDoApp\backend c#\obj\Debug\net8.0\backend c#.AssemblyInfo.cs
+D:\6 th semi\Interview\ToDo app\ToDoApp\backend c#\obj\Debug\net8.0\backend c#.csproj.CoreCompileInputs.cache
+D:\6 th semi\Interview\ToDo app\ToDoApp\backend c#\obj\Debug\net8.0\backend c#.MvcApplicationPartsAssemblyInfo.cache
+D:\6 th semi\Interview\ToDo app\ToDoApp\backend c#\obj\Debug\net8.0\backend c#.sourcelink.json
