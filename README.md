@@ -16,11 +16,11 @@ The ToDoApp is a task management application designed to enhance productivity an
 
 
 
-### Home Page
-![Home Page](./docs/homepage.png)
-
 ### Login Page
 ![Login Page](./docs/loginpage.png)
+
+### Home Page
+![Home Page](./docs/homepage.png)
 
 ### Add Task
 ![Add Task](./docs/Addtask.png)
