@@ -19,6 +19,7 @@ const TodoForm: React.FC<TodoFormProps> = ({
   const [isImportant, setIsImportant] = useState(
     initialData?.isImportant || false
   );
+  const [error, setError] = useState("");
 
   const queryClient = useQueryClient();
 
@@ -51,12 +52,18 @@ const TodoForm: React.FC<TodoFormProps> = ({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!name.trim()) {
+      setError("Please fill in the task name.");
+      return;
+    }
+    setError(""); // Clear any previous error
+
     if (isEditing && initialData) {
       updateMutation.mutate({ ...initialData, name, isImportant });
     } else {
       addMutation.mutate({
-        taskName: name as string,
-        isImportant: isImportant as boolean,
+        taskName: name,
+        isImportant: isImportant,
       });
     }
   };
@@ -71,6 +78,7 @@ const TodoForm: React.FC<TodoFormProps> = ({
         placeholder="Task Name"
         required
       />
+      {error && <p className="error-message">{error}</p>}
       <label className="important-checkbox">
         <input
           type="checkbox"
@@ -80,9 +88,7 @@ const TodoForm: React.FC<TodoFormProps> = ({
         Important
       </label>
       <div className="button-group">
-        <button type="submit" onClick={handleSubmit}>
-          Save
-        </button>
+        <button type="submit">Save</button>
         <button type="button" className="cancel" onClick={onClose}>
           Cancel
         </button>
