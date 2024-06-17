@@ -244,3 +244,6 @@
 .todo-section li:last-child {
   border-bottom: none;
 }
+.todo-sectionAllToDo{
+  background-color: #0c253f;
+}

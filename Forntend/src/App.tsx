@@ -23,10 +23,16 @@ const App: React.FC = () => {
       <button className="add-task" onClick={handleOpenForm}>
         Add Task
       </button>
-      {isFormOpen && <TodoForm onClose={handleCloseForm} />}
+      {isFormOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <TodoForm onClose={handleCloseForm} />
+          </div>
+        </div>
+      )}
       <div className="todo-container">
         <div className="todo-section">
-          <h2 className="section-title">All Tasks</h2>
+          <h2 className="section-title">All To-Do Items</h2>
           <TodoList />
         </div>
         <div className="todo-section">
@@ -34,7 +40,7 @@ const App: React.FC = () => {
           <ImportantTodoList />
         </div>
         <div className="todo-section">
-          <h2 className="section-title">Completed Tasks</h2>
+          <h2 className="section-title">Completed To-Dos</h2>
           <CompletedTodoList />
         </div>
       </div>
