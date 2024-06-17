@@ -14,6 +14,15 @@ The ToDoApp is a task management application designed to enhance productivity an
 - **Responsive UI**: Enjoy a seamless and user-friendly interface across various devices.
 - **Real-time Updates**: Get real-time updates to your task list.
 
+### Add Task
+![Add Task](./docs/Addtask.png)
+
+### Home Page
+![Home Page](./docs/homepage.png)
+
+### Login Page
+![Login Page](./docs/loginpage.png)
+
 ## Prerequisites
 
 Ensure you have the following tools installed on your system:
