@@ -32,7 +32,7 @@ button.add-task {
   background-color: #28a745;
   color: #fff;
 }
-
+/* 
 button.edit {
   background-color: #007bff;
   color: #fff;
@@ -41,7 +41,7 @@ button.edit {
 button.delete {
   background-color: #dc3545;
   color: #fff;
-}
+} */
 
 button.cancel {
   background-color: #6c757d;

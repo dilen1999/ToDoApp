@@ -1,11 +1,20 @@
-
+/* 
 .container {
-    max-width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #efdef1;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; 
+     margin: 0px auto;
+    padding: 0px;
+    background-color: #e0d3e2;
+    border-radius: 0px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+  } */
+  .TaskMaster {
+    font-family: 'Helvetica, Arial, sans-serif';
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.2;
   }
   
   /* Button Styles */
@@ -20,12 +29,46 @@
     transition: background-color 0.3s, box-shadow 0.3s;
   }
   
-  button.add-task {
-    background-color: #28a745;
+  .add-task {
+    background-color: #28a745; /* Fallback for older browsers */
+    background-image: linear-gradient(45deg, #28a745, #218838);
     color: #fff;
+    width: 40%; /* Adjusted width */
+    height: 60px; /* Added height for better aesthetics */
+    border: none;
+    margin-left: 500px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none; /* Ensure it's not underlined */
+  }
+
+  .add-task:hover {
+    background-image: linear-gradient(45deg, #218838, #1e7e34);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .add-task:active {
+    background-image: linear-gradient(45deg, #218838, #19692c);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+  }
+
+  .add-task:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5);
   }
   
-  button.edit {
+  /* button.edit {
     background-color: #007bff;
     color: #fff;
   }
@@ -33,7 +76,7 @@
   button.delete {
     background-color: #dc3545;
     color: #fff;
-  }
+  } */
   
   button.cancel {
     background-color: #6c757d;
@@ -142,3 +185,62 @@
     margin-top: 10px;
   }
   
+  .align-text{
+    padding: 40px;
+  }
+  
+  /* Container styling */
+.todo-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Section styling */
+.todo-section {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Section title styling */
+.section-title {
+  font-family: 'Arial, sans-serif';
+  font-size: 1.8rem;
+  color: #333;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Hover effect for sections */
+.todo-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Additional adjustments for lists */
+.todo-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-section li {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.todo-section li:last-child {
+  border-bottom: none;
+}

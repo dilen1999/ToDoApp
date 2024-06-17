@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { useMutation, useQueryClient} from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import { creatTodo, updateTodo } from "../api/axios";
 import { TodoItemProps } from "./Types";
+import '../CSS/TodoForm.css'
 
 interface TodoFormProps {
   initialData?: TodoItemProps;
@@ -19,39 +20,39 @@ const TodoForm: React.FC<TodoFormProps> = ({
     initialData?.isImportant || false
   );
 
-    const queryClient= useQueryClient();
+  const queryClient = useQueryClient();
 
-  const addMutation = useMutation(creatTodo,{
+  const addMutation = useMutation(creatTodo, {
     onError: (error) => {
       console.error("Add Todo Error:", error);
     },
     onSuccess: () => {
-      queryClient.invalidateQueries('todos');
-      queryClient.invalidateQueries('importantTodos');
-      queryClient.invalidateQueries('completedTodos');
+      queryClient.invalidateQueries("todos");
+      queryClient.invalidateQueries("importantTodos");
+      queryClient.invalidateQueries("completedTodos");
       onClose();
     },
   });
 
   const updateMutation = useMutation(
-    (data: TodoItemProps) => updateTodo(data),{
-    onError: (error) => {
-      console.error("Update Todo Error:", error);
-    },
-    onSuccess: () => {
-      queryClient.invalidateQueries('todos');
-      queryClient.invalidateQueries('importantTodos');
-      queryClient.invalidateQueries('completedTodos');
-      onClose();
-    },
-  });
+    (data: TodoItemProps) => updateTodo(data),
+    {
+      onError: (error) => {
+        console.error("Update Todo Error:", error);
+      },
+      onSuccess: () => {
+        queryClient.invalidateQueries("todos");
+        queryClient.invalidateQueries("importantTodos");
+        queryClient.invalidateQueries("completedTodos");
+        onClose();
+      },
+    }
+  );
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (isEditing && initialData) {
-      updateMutation.mutate(
-        { ...initialData, name, isImportant }
-      );
+      updateMutation.mutate({ ...initialData, name, isImportant });
     } else {
       addMutation.mutate({
         taskName: name as string,
@@ -61,7 +62,7 @@ const TodoForm: React.FC<TodoFormProps> = ({
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="todo-form">
       <input
         type="text"
         value={name}
@@ -69,7 +70,7 @@ const TodoForm: React.FC<TodoFormProps> = ({
         placeholder="Task Name"
         required
       />
-      <label>
+      <label className="important-checkbox">
         <input
           type="checkbox"
           checked={isImportant}
@@ -77,12 +78,14 @@ const TodoForm: React.FC<TodoFormProps> = ({
         />
         Important
       </label>
-      <button type="submit" onClick={handleSubmit}>
-        Save
-      </button>
-      <button type="button" className="cancel" onClick={onClose}>
-        Cancel
-      </button>
+      <div className="button-group">
+        <button type="submit" onClick={handleSubmit}>
+          Save
+        </button>
+        <button type="button" className="cancel" onClick={onClose}>
+          Cancel
+        </button>
+      </div>
     </form>
   );
 };

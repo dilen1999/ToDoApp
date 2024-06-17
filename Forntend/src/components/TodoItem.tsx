@@ -3,6 +3,9 @@ import { useMutation, useQueryClient } from "react-query";
 import { deleteTodo, makeTaskDone } from "../api/axios";
 import TodoForm from "./TodoForm";
 import { TodoItemProps } from "./Types";
+import '../CSS/TodoItem.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 interface TodoItemProp {
   todo: TodoItemProps;
@@ -72,34 +75,34 @@ const TodoItem: React.FC<TodoItemProp> = ({ todo }) => {
 
   return (
     <div className="todo-item">
-      <input
-        type="checkbox"
-        checked={todoData.isDone}
-        onChange={handleToggleDone}
-      />
-      <span
-        style={{ textDecoration: todoData.isDone ? "line-through" : "none" }}
-      >
-        {todoData.name}
-      </span>
-      <button className="edit" onClick={handleEdit}>
-        Edit
-      </button>
-      <button className="delete" onClick={handleDelete}>
-        Delete
-      </button>
-      {isEditing && (
-        <div className="modal">
-          <div className="modal-content">
-            <TodoForm
-              isEditing={true}
-              initialData={todo}
-              onClose={handleCloseEdit}
-            />
-          </div>
+    <input
+      type="checkbox"
+      checked={todoData.isDone}
+      onChange={handleToggleDone}
+    />
+    <span
+      style={{ textDecoration: todoData.isDone ? "line-through" : "none" }}
+    >
+      {todoData.name}
+    </span>
+    <button className="edit" onClick={handleEdit} title="Edit">
+      <i className="fas fa-edit"></i>
+    </button>
+    <button className="delete" onClick={handleDelete} title="Delete">
+      <i className="fas fa-trash-alt"></i>
+    </button>
+    {isEditing && (
+      <div className="modal">
+        <div className="modal-content">
+          <TodoForm
+            isEditing={true}
+            initialData={todo}
+            onClose={handleCloseEdit}
+          />
         </div>
-      )}
-    </div>
+      </div>
+    )}
+  </div>
   );
 };
 
